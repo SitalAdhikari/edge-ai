@@ -1,0 +1,5 @@
+Number of measurements: 5 
+ Minimum Latency: 11.8 
+Maximum Latency: 14.2 
+ Mean Latency: 12.7 
+Median Latency: 12.4 
