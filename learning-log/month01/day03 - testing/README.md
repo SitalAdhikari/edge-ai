@@ -7,7 +7,7 @@
    -isinstance (21,int)-> True <br>
    -isinstance((21,'yes'),tuple) <br>
 
-5. 
+5. git diff , git diff --staged, git log -5 --oneline
  
 
 

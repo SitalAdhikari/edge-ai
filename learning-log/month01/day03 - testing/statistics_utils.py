@@ -15,7 +15,7 @@ def validate_values(value):
 def calculate_mean(value):
 	"""To calculate the mean of the values."""
 	validate_values(value)
-	return sum(value)/len(value)
+	return  sum(value)/len(value)
 
 def calculate_median(value):
 	"""To calculate the median of the values."""
