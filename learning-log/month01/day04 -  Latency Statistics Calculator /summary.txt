@@ -1,0 +1,5 @@
+Count:5 
+Minimum:11.8 
+Maximum:14.2 
+Mean:12.7 
+Median:12.4 
