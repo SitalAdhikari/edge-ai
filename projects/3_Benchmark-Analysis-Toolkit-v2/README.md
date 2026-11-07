@@ -99,7 +99,7 @@ cd edge-ai/3_Benchmark-Analysis-Toolkit-v2
 ### Step 2: Create a virtual environment
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 Activate it.
@@ -129,14 +129,14 @@ The application uses command-line arguments to specify the input CSV file and ou
 ### Run the program
 
 ```bash
-python main.py --input data/data.csv
+python main.py --inputfile data/data.csv
 ```
 
 ### Command-line arguments
 
 | Argument | Description |
 |---|---|
-| `--input` | Path to the input CSV file |
+| `--inputfile` | Path to the input CSV file |
 | `--output` | Directory where analysis results are saved |
 
 The application should display a helpful usage message when incorrect arguments are supplied.
