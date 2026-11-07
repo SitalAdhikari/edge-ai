@@ -1,4 +1,4 @@
-# Day07 - Unittesting in the Benchmark Analysis Toolkit
+# Day08 - Unittesting in the Benchmark Analysis Toolkit
 
 - made test/test_statistics.py  for automated testing of the statistics.py <br>
 
