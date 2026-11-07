@@ -1,5 +1,6 @@
 import argparse
 from pathlib import Path
+import csv
 
 from benchmark_toolkit.data_loader import load_data
 from benchmark_toolkit.statistics import calculate_statistics
@@ -18,10 +19,19 @@ def main():
 	
 	measurements = load_data(input_path)
 	print(measurements)
-	statistics= calculate_statistics(measurements)
-	for name,value in statistics.items() :
-		print(f"{name}:{value}")
-	plot_latency(measurements,output_path)
 	
+	
+	statistics= calculate_statistics(measurements)
+	output_path= Path(output_path)
+	output_path.mkdir(parents=True, exist_ok=True)
+	summary= output_path/"summary.csv"
+	with open(summary,'w') as file:
+		writer=csv.writer(file)
+		writer.writerow(['Metric','Value'])
+		for metric,value in statistics.items():
+			writer.writerow([metric,value])
+	
+	plot_latency(measurements,output_path)
+			
 if __name__ == "__main__":
 	main()

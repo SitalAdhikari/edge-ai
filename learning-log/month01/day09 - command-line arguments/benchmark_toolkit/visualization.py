@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-def plot_latency(latency,output_folder):
+def plot_latency(latency,output_dir):
 	"""Create and save Lineplot and a histogram"""
 	
 	count= range(1,len(latency)+1)
@@ -12,8 +12,6 @@ def plot_latency(latency,output_folder):
 	plt.grid()
 	plt.tight_layout()
 	
-	output_dir= Path(output_folder)
-	output_dir.mkdir(parents=True, exist_ok=True)
 	output_path1 = output_dir/"lineplot.png"
 	plt.savefig(output_path1)
 	plt.close()
