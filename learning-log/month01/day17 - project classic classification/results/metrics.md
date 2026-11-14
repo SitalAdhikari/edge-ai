@@ -1,0 +1,10 @@
+Model Name,LogisticRegression
+Accuracy Score,0.9824561403508771
+F1 score,0.9861111111111112
+Recall score,0.9861111111111112
+Precision,0.9861111111111112
+Model Name,DecisionTree
+Accuracy Score,0.9385964912280702
+F1 score,0.951048951048951
+Recall score,0.9444444444444444
+Precision,0.9577464788732394
