@@ -17,6 +17,7 @@ The objective is to train and evaluate Logistic Regression and Decision Tree mod
 - Used `StandardScaler` for feature scaling.
 - Implemented using a Scikit-learn preprocessing pipeline.
 - Maximum iterations: 5000.
+- Hyperparameter tuned
 
 ### 2. Decision Tree
 - Implemented using `DecisionTreeClassifier`.
@@ -31,16 +32,6 @@ Both models were evaluated using:
 - F1-score
 - Confusion Matrix
 
-## Results Summary
-
-| Metric | Logistic Regression | Decision Tree |
-|---|---:|---:|
-| Accuracy | 98.25% | 93.86% |
-| Precision | 98.61% | 95.77% |
-| Recall | 98.61% | 94.44% |
-| F1-score | 98.61% | 95.10% |
-
-Logistic Regression performed better across all four evaluation metrics on the test set.
 
 ## Project Structure
 
@@ -50,7 +41,6 @@ classification-project/
 │   └── result.md
 ├── src/
 │   └── train.py
-├── report.md
 ├── requirements.txt
 └── README.md
 ```
@@ -71,14 +61,11 @@ python src/train.py
 
 3. View the generated confusion matrices in the `results/` directory.
 
-## Detailed Report
-
-See [report.md](report.md) for the methodology, evaluation results, model comparison, limitations, and conclusion.
 
 ## Learning Outcomes
 
 - Understood the fundamentals of classification.
 - Implemented Logistic Regression and Decision Tree models.
-- Learned feature scaling and Scikit-learn pipelines.
+- Learned feature scaling, Scikit-learn pipelines, cross validation and hyperparameter tuned.
 - Evaluated models using classification metrics and confusion matrices.
 - Compared model performance and identified limitations.
