@@ -22,6 +22,9 @@ pillow==13.0.0
 pydantic==2.14.1
 pydantic_core==2.50.1
 pyparsing==3.3.3
+PyQt5==5.15.11
+PyQt5-Qt5==5.15.19
+PyQt5_sip==12.20.0
 python-dateutil==3.0.0
 scikit-learn==1.9.1
 scipy==1.18.1
